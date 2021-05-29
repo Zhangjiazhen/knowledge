@@ -84,9 +84,9 @@ srv2, _ := NewServer("locahost", 9000, &conf)
 
 ```go
 User user = new User.Builder()
-  .name("Hao Chen")
-  .email("haoel@hotmail.com")
-  .nickname("左耳朵")
+  .name("Jiazhen Zhang")
+  .email("xiaodiu@live.com")
+  .nickname("小丢")
   .build();
 ```
 
