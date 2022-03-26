@@ -139,3 +139,8 @@ kube-apiserver目前提供了6种授权机制，分别是AlwaysAllow、AlwaysDen
 - Webhook：基于Webhook的一种HTTP协议回调，可进行远程授权管理。
 - RBAC：即Role-Based Access Control，基于角色的访问控制。
 - Node：节点授权，专门授权给kubelet发出的API请求。
+
+## 7 进程信号处理
+
+k8s是基于UNIX信号来实现的优雅退出
+
