@@ -4,7 +4,7 @@
 
 创建流程图
 
-<img src="/Users/zhangjiazhen03/github/knowledge/k8s源码阅读/img/resize,w_2048,m_lfit.png" alt="img" style="zoom:50%;" />
+<img src="./img/resize,w_2048,m_lfit.png" alt="img" style="zoom:50%;" />
 
 Kubernetes Pod资源对象创建流程介绍如下。
 （1）使用kubectl工具向Kubernetes API Server发起创建Pod资源对象的请求。
@@ -35,7 +35,7 @@ https核心原理
 
 kube-apiserver为丰富周边工具和库生态系统，提供了3种HTTP Server服务，用于将庞大的kube-apiserver组件功能进行解耦，这3种HTTP Server分别是APIExtensionsSerer、KubeAPIServer、AggregatorServer。不同服务的应用场景不同，提供的资源也不同，但它们都可以通过kubectl工具或接口进行资源
 
-<img src="/Users/zhangjiazhen03/github/knowledge/k8s源码阅读/img/3.png" alt="img" style="zoom: 50%;" />
+<img src="./img/3.png" alt="img" style="zoom: 50%;" />
 
 APIExtensionsServer扩展服务和AggregatorServer聚合服务都是可以在不修改Kubernetes核心代码的前提下扩展Kubernetes API的方式。只有KubeAPIServer核心服务是Kubernetes系统运行的基础，不建议随意修改它。
 
@@ -89,7 +89,7 @@ kube-apiserver目前提供了31种准入控制器，分别是AlwaysAdmit、Alway
 
 ### 3.4 创建APIExtensionsServer
 
-<img src="/Users/zhangjiazhen03/github/knowledge/k8s源码阅读/img/5.png" alt="image-20220305144922083" style="zoom:50%;" />
+<img src="./img/5.png" alt="image-20220305144922083" style="zoom:50%;" />
 
 （1）创建GenericAPIServer。
 
