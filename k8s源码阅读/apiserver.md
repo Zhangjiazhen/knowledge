@@ -60,7 +60,7 @@ kube-apiserver组件启动后的第一件事情是将Kubernetes所支持的资�
 资源的注册过程并不是通过函数调用触发的，而是通过Go语言的导入（import）和初始化（init）机制触发的。
 
 1. 初始化Scheme资源注册表
-2. 注册Kubernetes所支持的资
+2. 注册Kubernetes所支持的资源
 
 ### 3.2 Cobra命令行参数解
 
