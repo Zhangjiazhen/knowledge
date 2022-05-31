@@ -12,7 +12,9 @@ Kind：资源种类，描述Resource的种类，与Resource为同一级别。
 
 <img src="./img/13.png" alt="image-20220312162747179" style="zoom:50%;" />
 
-资源组、资源版本、资源、子资源的完整表现形式为<group>/<version>/<resource>/<subresource>。以常用的Deployment资源为例，其完整表现形式为apps/v1/deployments/status。
+（资源和资源种类的区别）
+
+组、资源版本、资源、子资源的完整表现形式为<group>/<version>/<resource>/<subresource>。以常用的Deployment资源为例，其完整表现形式为apps/v1/deployments/status。
 
 那么pod的表现形式就是""/v1/pods/，核心资源没有<group>
 
